@@ -121,9 +121,9 @@
           <div class="popup-form__header">Получите индивидуальное предложение
             <span>на производство и поставку изделий</span>
           </div>
-          <label for="phone">Введите ваш номер телефона:</label>
+          <label class="popup-form__label" for="phone">Введите ваш номер телефона:</label>
           <input type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="popup-form__input" required>
-          <button class="button button_big">Оставить заявку!</button>
+          <button class="button button_big popup-form__btn">Оставить заявку!</button>
           <div class="popup-form__note">*Минимальный заказ 500шт</div>
         </form>
       </div>
@@ -135,10 +135,11 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('.header-contacts__button').on('click')
+  });
+  </script>
 </body>
 
 </html>
