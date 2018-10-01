@@ -86,6 +86,12 @@ input:focus, button:focus {
     font-size: 14px;
     font-weight: 300; }
 
+.header_logo {
+  background: url("../img/good_cardboard.png") center no-repeat;
+  background-size: 100%;
+  width: 191px;
+  height: 61px; }
+
 .header-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,9 +102,12 @@ input:focus, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .header-contacts__button {
+    margin-left: 27px;
+    font-size: 14px;
+    color: #ffffff; }
   .header-contacts__phones {
-    font-size: 22px;
-    /* align-items: center */ }
+    font-size: 22px; }
     .header-contacts__phones a {
       color: #373737;
       text-decoration: none;
@@ -124,10 +133,7 @@ input:focus, button:focus {
   border-right: 1px solid #cfcfd0; }
 
 .header .phone_two {
-  margin: 0 27px 0 13px; }
-  .header .phone_two__button {
-    font-size: 14px;
-    color: #ffffff; }
+  margin: 0 0 0 13px; }
 
 nav {
   padding: 8px 0;
@@ -253,6 +259,34 @@ section.contacts {
         font-size: 14px;
         font-weight: 300;
         line-height: 30px; }
+
+@media (max-width: 576px) {
+  .header_logo {
+    width: 35px;
+    height: 35px;
+    background: #ff9d00 url("../img/header-logo_mobile.png") center no-repeat;
+    border-radius: 4px; }
+  .header-contacts {
+    display: block; }
+    .header-contacts__phones {
+      font-size: 14px;
+      margin: 0;
+      padding-righ: 0; }
+  .hidden-mobile {
+    display: none; }
+  .header-contacts__button {
+    padding: 7px; }
+    .header-contacts__button img {
+      margin-right: 0; } }
+
+.phone_one {
+  padding-right: 0;
+  padding: 0;
+  border-right: none; }
+
+.phone_two {
+  margin: 0;
+  padding-left: 0; }
 
 body {
   font-family: 'Roboto', sans-serif;

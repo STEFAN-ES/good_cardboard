@@ -1,11 +1,19 @@
 .header
+  &_logo
+    background: url('../img/good_cardboard.png') center no-repeat
+    background-size: 100%
+    width: 191px
+    height: 61px
   &-contacts
     display: flex
     justify-content: flex-end
     align-items: center
+    &__button
+      margin-left: 27px
+      font-size: 14px
+      color: $text-color-light
     &__phones
       font-size: 22px
-      /* align-items: center */
       a
         color: $text-color-dark
         text-decoration: none
@@ -28,11 +36,8 @@
     padding-right: 13px
     border-right: 1px solid #cfcfd0
   .phone_two
-    margin: 0 27px 0 13px
-      
-    &__button
-      font-size: 14px
-      color: $text-color-light
+    margin: 0 0 0 13px
+
 nav
   padding: 8px 0
   background: $text-color-dark
