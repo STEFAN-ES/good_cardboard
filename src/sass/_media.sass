@@ -1,4 +1,6 @@
 @media (max-width: 576px)
+  nav
+    display: none
   .header
     &_logo
       width: 35px
@@ -6,21 +8,59 @@
       background: $active-color url('../img/header-logo_mobile.png') center no-repeat
       border-radius: 4px
     &-contacts
-      display: block
-      &__phones
+      &__phone
+        &s
+          flex-direction: column
         font-size: 14px
-        margin: 0
-        padding-righ: 0
+        font-weight: 400
+        &-bold
+          font-weight: 900
+        &:first-child
+          padding-right: 0
+          border-right: none
+        &:last-child
+          margin: 0
+          margin-left: 0
   .hidden-mobile
     display: none
   .header-contacts__button
     padding: 7px
     img
       margin-right: 0
-.phone_one
-  padding-right: 0
-  padding: 0
-  border-right: none
-.phone_two
-  margin: 0
-  padding-left: 0
+  
+  .main
+    padding-top: 50px
+    text-align: center
+    &-text
+      &__title
+        font-size: 22px
+        font-weight: 700
+        line-height: 24px
+        color: $active-color
+      &__subtitle
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 40px
+      &__form
+        background-color: transparent
+        padding: 0
+    .form
+      display: block
+      &-title
+        padding-right: 0
+        font-size: 16px
+        font-weight: 300
+        line-height: 18px
+        margin-bottom: 16px
+        &__important
+          display: block
+          margin-top: 14px
+          font-weight: 700
+      &__input
+        display: inline-block
+        margin: 0 0 13px 0
+        width: 99%
+  .button
+    &_big
+      width: 200px
+        

@@ -106,15 +106,25 @@ input:focus, button:focus {
     margin-left: 27px;
     font-size: 14px;
     color: #ffffff; }
-  .header-contacts__phones {
+  .header-contacts__phone {
     font-size: 22px; }
-    .header-contacts__phones a {
+    .header-contacts__phones {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .header-contacts__phone:first-child {
+      padding-right: 13px;
+      border-right: 1px solid #cfcfd0; }
+    .header-contacts__phone:last-child {
+      margin: 0 0 0 13px;
+      margin-left: 13px; }
+    .header-contacts__phone a {
       color: #373737;
       text-decoration: none;
       position: relative; }
-      .header-contacts__phones a:hover {
+      .header-contacts__phone a:hover {
         /* color: $active-color */ }
-      .header-contacts__phones a::before {
+      .header-contacts__phone a::before {
         content: '';
         bottom: 0;
         right: 0;
@@ -124,16 +134,9 @@ input:focus, button:focus {
         background-color: #ff9d00;
         -webkit-transition: 0.2s;
         transition: 0.2s; }
-      .header-contacts__phones a:hover:before {
+      .header-contacts__phone a:hover:before {
         width: 100%;
         left: 0; }
-
-.header .phone_one {
-  padding-right: 13px;
-  border-right: 1px solid #cfcfd0; }
-
-.header .phone_two {
-  margin: 0 0 0 13px; }
 
 nav {
   padding: 8px 0;
@@ -261,32 +264,68 @@ section.contacts {
         line-height: 30px; }
 
 @media (max-width: 576px) {
+  nav {
+    display: none; }
   .header_logo {
     width: 35px;
     height: 35px;
     background: #ff9d00 url("../img/header-logo_mobile.png") center no-repeat;
     border-radius: 4px; }
-  .header-contacts {
-    display: block; }
+  .header-contacts__phone {
+    font-size: 14px;
+    font-weight: 400; }
     .header-contacts__phones {
-      font-size: 14px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .header-contacts__phone-bold {
+      font-weight: 900; }
+    .header-contacts__phone:first-child {
+      padding-right: 0;
+      border-right: none; }
+    .header-contacts__phone:last-child {
       margin: 0;
-      padding-righ: 0; }
+      margin-left: 0; }
   .hidden-mobile {
     display: none; }
   .header-contacts__button {
     padding: 7px; }
     .header-contacts__button img {
-      margin-right: 0; } }
-
-.phone_one {
-  padding-right: 0;
-  padding: 0;
-  border-right: none; }
-
-.phone_two {
-  margin: 0;
-  padding-left: 0; }
+      margin-right: 0; }
+  .main {
+    padding-top: 50px;
+    text-align: center; }
+    .main-text__title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #ff9d00; }
+    .main-text__subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 40px; }
+    .main-text__form {
+      background-color: transparent;
+      padding: 0; }
+    .main .form {
+      display: block; }
+      .main .form-title {
+        padding-right: 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 18px;
+        margin-bottom: 16px; }
+        .main .form-title__important {
+          display: block;
+          margin-top: 14px;
+          font-weight: 700; }
+      .main .form__input {
+        display: inline-block;
+        margin: 0 0 13px 0;
+        width: 99%; }
+  .button_big {
+    width: 200px; } }
 
 body {
   font-family: 'Roboto', sans-serif;

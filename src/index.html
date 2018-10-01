@@ -50,13 +50,15 @@
           <!-- /.col-4 -->
           <div class="col-9 col-md-8">
             <div class="header-contacts">
-              <div class="header-contacts__phones phone_one">
-                <a href="tel:8 (347) 271-54-28">8 (347) 271-54-28</a>
+              <div class="header-contacts__phones">
+                <div class="header-contacts__phone">
+                  <a href="tel:8 (347) 271-54-28">8 (347) <span class="header-contacts__phone-bold">271-54-28</span></a>
+                </div>
+                <div class="header-contacts__phone phone_two">
+                  <a href="tel:8 (937) 363-30-00">8 (937) <span class="header-contacts__phone-bold">363-30-00</span></a>
+                </div>
+                <!-- /.header-contacts__phone -->
               </div>
-              <div class="header-contacts__phones phone_two">
-                <a href="tel:8 (937) 363-30-00">8 (937) 363-30-00</a>
-              </div>
-              <!-- /.header-contacts__phones -->
               <button class="header-contacts__button button">
                 <img src="img/icon-phone.png" alt="телефон">
                 <span class="hidden-mobile">Заказать звонок</span>
@@ -76,14 +78,14 @@
   <section class="main">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-5">
-          <div class="main-img">
+        <div class="col-12 col-md-5">
+          <div class="main-img hidden-mobile">
             <img src="img/main/header-box.png" alt="Картон">
           </div>
         </div>
         <!--col-5-->
 
-        <div class="col-7">
+        <div class="col-12 col-md-7">
           <div class="main-text">
             <h1 class="main-text__title">Производство упаковки из гофрокартона</h1>
             <div class="main-text__subtitle">
@@ -141,6 +143,9 @@
   <script>
   jQuery(function($){
    $(".popup-form__input").mask("+7(999) 999-99-99");
+   });
+   jQuery(function($){
+   $(".form__input").mask("+7(999) 999-99-99");
    });
    </script>
   

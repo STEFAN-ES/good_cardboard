@@ -12,8 +12,16 @@
       margin-left: 27px
       font-size: 14px
       color: $text-color-light
-    &__phones
+    &__phone
+      &s
+        display: flex
       font-size: 22px
+      &:first-child
+        padding-right: 13px
+        border-right: 1px solid #cfcfd0 
+      &:last-child
+        margin: 0 0 0 13px
+        margin-left: 13px
       a
         color: $text-color-dark
         text-decoration: none
@@ -32,11 +40,6 @@
         &:hover:before
           width: 100%
           left: 0
-  .phone_one
-    padding-right: 13px
-    border-right: 1px solid #cfcfd0
-  .phone_two
-    margin: 0 0 0 13px
 
 nav
   padding: 8px 0
