@@ -321,11 +321,42 @@ section.contacts {
           margin-top: 14px;
           font-weight: 700; }
       .main .form__input {
+        text-align: center;
         display: inline-block;
         margin: 0 0 13px 0;
         width: 99%; }
   .button_big {
-    width: 200px; } }
+    width: 220px; }
+  .overlay .popup {
+    display: block;
+    border: 5px #ff9d00;
+    top: 60px;
+    width: 290px; }
+    .overlay .popup-title {
+      font-size: 16px;
+      mix-heigth: 61px; }
+    .overlay .popup-close {
+      top: -10px;
+      right: 2px; }
+    .overlay .popup-form {
+      text-align: center;
+      padding: 15px 10px; }
+      .overlay .popup-form__header {
+        font-size: 20px; }
+        .overlay .popup-form__header span {
+          display: inline-block;
+          font-size: 15px; }
+      .overlay .popup-form__input {
+        display: inline-block;
+        width: 99%; }
+      .overlay .popup-form__label {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 15px; }
+      .overlay .popup-form__btn {
+        width: 200px; }
+      .overlay .popup-form__note {
+        font-size: 12px; } }
 
 body {
   font-family: 'Roboto', sans-serif;
