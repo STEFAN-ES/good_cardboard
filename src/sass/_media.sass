@@ -1,3 +1,49 @@
+@media (max-width: 1200px)
+  .main  
+    &-img
+      width: 390px
+      left: -50px
+      &::before
+        content: ''
+        position: absolute
+        height: 350px
+        width: 350px
+        left: 50%
+        margin-left: -145px
+        top: -2px
+        border: 2px solid #ffffff
+        border-radius: 50%
+        z-index: -1
+    &-text
+      &__title
+        font-size: 36px
+        font-weight: 700
+        line-height: 40px
+        margin-bottom: 8px
+        margin-top: 0
+      &__subtitle
+        font-size: 24px
+        font-weight: 300
+        margin-bottom: 18px
+  .form
+    &-title
+      padding-right: 50px
+      font-size: 18px
+      font-weight: 300
+      line-height: 30px
+      margin-bottom: 16px
+      &__important
+        text-transform: uppercase
+        font-weight: 700
+    &__input
+      font-size: 13px
+    &-small
+      font-size: 12px
+  .button
+    &_big
+      font-size: 13px
+
+  
 @media (max-width: 992px)
   .hidden-box
     display: none
