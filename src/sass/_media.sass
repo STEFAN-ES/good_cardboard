@@ -138,6 +138,8 @@
       font-size: 13px  
 
 @media (max-width: 576px)
+  section.contacts
+    padding: 11px 0
   nav
     display: none
   .header
@@ -152,6 +154,7 @@
           flex-direction: column
         font-size: 14px
         font-weight: 400
+        /* letter-spacing: 0.5px */
         &-bold
           font-weight: 900
         &:first-child
@@ -163,12 +166,17 @@
   .hidden-mobile
     display: none
   .header-contacts__button
-    padding: 7px
+    padding: 6px
+    width: 27px
+    height: 27px
+    margin-left: 14px
     img
       margin-right: 0
+      width: 14px
+      padding-bottom: 3px
   
   .main
-    padding-top: 50px
+    padding-top: 45px
     text-align: center
     &-text
       &__title
@@ -176,33 +184,46 @@
         font-weight: 700
         line-height: 24px
         color: $active-color
+        margin-bottom: 7px
       &__subtitle
         font-size: 18px
         font-weight: 400
-        margin-bottom: 40px
+        margin-bottom: 35px
       &__form
+        max-width: 460px
+        margin-left: auto
+        margin-right: auto
         background-color: transparent
         padding: 0
     .form
       display: block
+      margin-bottom: 10px
       &-title
         padding-right: 0
-        font-size: 16px
+        font-size: 15px
         font-weight: 300
         line-height: 18px
-        margin-bottom: 16px
+        margin-bottom: 14px
         &__important
           display: block
-          margin-top: 14px
+          margin-top: 10px
           font-weight: 700
       &__input
         text-align: center
         display: inline-block
         margin: 0 0 13px 0
-        width: 99%
+        width: 100%
+        padding: 16px 20px
+      &-small
+        padding-left: 0
   .button
     &_big
-      width: 220px
+      width: 180px
+      padding-top: 17px
+      padding-bottom: 16px
+      padding-right: 18px 
+      padding-left: 18px
+      font-size: 15px
 
   .overlay
     .popup
