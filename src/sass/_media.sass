@@ -135,7 +135,42 @@
       &__important
         display: block
     &__input
-      font-size: 13px  
+      font-size: 13px 
+  .overlay
+    .popup
+      display: block
+      border: 5px $active-color
+      top: 60px
+      width: 500px
+      &-title
+        font-size: 18px
+        mix-heigth: 61px
+      &-close
+        top: -10px
+        right: 2px
+      &-form
+        text-align: center
+        padding: 15px 10px
+        &__header
+          font-size: 22px
+          span
+            display: inline-block
+            font-size: 15px
+        &__input
+          display: inline-block
+          width: 80%
+          text-align: center
+          margin-right: 0
+        &__label
+          font-size: 18px
+          margin-bottom: 10px
+          margin-top: 15px
+        &__btn
+          width: 200px
+        &__note
+          font-size: 12px 
+  .modal-form
+    text-align: center
 
 @media (max-width: 576px)
   section.contacts
@@ -257,6 +292,29 @@
         &__note
           font-size: 12px
         
+  /* Оформляю секцию с цифрами */
+  .numbers
+    margin-bottom: 24px
+    &-block
+      display: block
+      width: 100%
+      margin-bottom: 24px
+      &__title
+        font-size: 30px
+        font-weight: 900
+        color: $active-color
+        margin-bottom: 10px
+      sup
+        font-size: 14px
+    &__text
+      font-size: 14px
+      font-weight: 300
 
-
+  /* оформляю секцию с преимуществами */
+  .features
+    padding-top: 24px
+    padding-bottom: 40px
+    &-block
+      flex-basis: 100%
+      margin-bottom: 8px
 

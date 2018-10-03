@@ -509,7 +509,41 @@ section.contacts {
     .form-title__important {
       display: block; }
   .form__input {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .overlay .popup {
+    display: block;
+    border: 5px #ff9d00;
+    top: 60px;
+    width: 500px; }
+    .overlay .popup-title {
+      font-size: 18px;
+      mix-heigth: 61px; }
+    .overlay .popup-close {
+      top: -10px;
+      right: 2px; }
+    .overlay .popup-form {
+      text-align: center;
+      padding: 15px 10px; }
+      .overlay .popup-form__header {
+        font-size: 22px; }
+        .overlay .popup-form__header span {
+          display: inline-block;
+          font-size: 15px; }
+      .overlay .popup-form__input {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        margin-right: 0; }
+      .overlay .popup-form__label {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 15px; }
+      .overlay .popup-form__btn {
+        width: 200px; }
+      .overlay .popup-form__note {
+        font-size: 12px; }
+  .modal-form {
+    text-align: center; } }
 
 @media (max-width: 576px) {
   section.contacts {
@@ -625,7 +659,32 @@ section.contacts {
       .overlay .popup-form__btn {
         width: 200px; }
       .overlay .popup-form__note {
-        font-size: 12px; } }
+        font-size: 12px; }
+  /* Оформляю секцию с цифрами */
+  .numbers {
+    margin-bottom: 24px; }
+    .numbers-block {
+      display: block;
+      width: 100%;
+      margin-bottom: 24px; }
+      .numbers-block__title {
+        font-size: 30px;
+        font-weight: 900;
+        color: #ff9d00;
+        margin-bottom: 10px; }
+      .numbers-block sup {
+        font-size: 14px; }
+    .numbers__text {
+      font-size: 14px;
+      font-weight: 300; }
+  /* оформляю секцию с преимуществами */
+  .features {
+    padding-top: 24px;
+    padding-bottom: 40px; }
+    .features-block {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin-bottom: 8px; } }
 
 body {
   font-family: 'Roboto', sans-serif;
