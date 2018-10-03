@@ -87,6 +87,27 @@
         display: block
     &__input
       font-size: 13px
+  .numbers
+    margin-bottom: 24px
+    &-block
+      display: block
+      width: 100%
+      margin-bottom: 30px
+      &__title
+        font-size: 34px
+        font-weight: 900
+        color: $active-color
+        margin-bottom: 12px
+      sup
+        font-size: 16px
+    &__text
+      font-size: 18px
+      font-weight: 300
+  
+  .features
+    &-block
+      flex-direction: column
+      text-align: center
   
 @media (max-width: 768px)
   .hidden-mobile
@@ -171,8 +192,33 @@
           font-size: 12px 
   .modal-form
     text-align: center
-
+  .numbers
+    margin-bottom: 24px
+    &-block
+      display: block
+      width: 100%
+      margin-bottom: 30px
+      &__title
+        font-size: 34px
+        font-weight: 900
+        color: $active-color
+        margin-bottom: 12px
+      sup
+        font-size: 16px
+    &__text
+      font-size: 18px
+      font-weight: 300
+  
+  /* Бллок с преимуществами */
+  .features
+    &-block
+      flex-direction: column
+      text-align: center
 @media (max-width: 576px)
+  .section
+    &-title
+      &::after
+        display: none
   section.contacts
     padding: 11px 0
   nav
@@ -317,4 +363,62 @@
     &-block
       flex-basis: 100%
       margin-bottom: 8px
+      text-align: left
+      flex-direction: row
+
+  /* Оформляю блок с клиентами */
+  .clients-block
+    width: 143px
+    height: 87px
+  .img-wrap
+
+  /* меняю путь к картинкам */
+  .img-wrap-1
+    width: 99px
+    height: 65px
+    background: url('../img/clients/mobile/img-1.png') center no-repeat
+  .img-wrap-2
+    height: 64px
+    width: 67px
+    background: url('../img/clients/mobile/img-2.png') center no-repeat
+  .img-wrap-3
+    height: 53px
+    width: 86px
+    background: url('../img/clients/mobile/img-3.png') center no-repeat
+  .img-wrap-4
+    height: 46px
+    width: 78px
+    background: url('../img/clients/mobile/img-4.png') center no-repeat
+  .img-wrap-5
+    height: 73px
+    width: 101px
+    background: url('../img/clients/mobile/img-5.png') center no-repeat
+  .img-wrap-6
+    height: 38px
+    width: 137px
+    background: url('../img/clients/mobile/img-6.png') center no-repeat
+  .img-wrap-7
+    height: 17px
+    width: 107px
+    background: url('../img/clients/mobile/img-7.png') center no-repeat
+  .img-wrap-8
+    height: 52px
+    width: 82px
+    background: url('../img/clients/mobile/img-8.png') center no-repeat
+  .img-wrap-9
+    height: 62px
+    width: 88px
+    background: url('../img/clients/mobile/img-9.png') center no-repeat
+  .img-wrap-10
+    height: 54px
+    width: 105px
+    background: url('../img/clients/mobile/img-10.png') center no-repeat
+  .img-wrap-11
+    height: 57px
+    width: 47px
+    background: url('../img/clients/mobile/img-11.png') center no-repeat
+  .img-wrap-12
+    height: 21px
+    width: 117px
+    background: url('../img/clients/mobile/img-12.png') center no-repeat
 
