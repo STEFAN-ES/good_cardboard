@@ -799,8 +799,8 @@ section.contacts {
               flex-direction: row; }
   /* Оформляю блок с клиентами */
   .clients-block {
-    width: 143px;
-    height: 87px; }
+    width: 139px;
+    max-height: 87px; }
   /* меняю путь к картинкам */
   .img-wrap-1 {
     width: 99px;
@@ -823,9 +823,8 @@ section.contacts {
     width: 101px;
     background: url("../img/clients/mobile/img-5.png") center no-repeat; }
   .img-wrap-6 {
-    height: 38px;
-    width: 137px;
-    background: url("../img/clients/mobile/img-6.png") center no-repeat; }
+    background: url("../img/clients/mobile/img-6.png") center no-repeat;
+    background-size: 90%; }
   .img-wrap-7 {
     height: 17px;
     width: 107px;
