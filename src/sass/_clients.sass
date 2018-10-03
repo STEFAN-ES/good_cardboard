@@ -1,4 +1,8 @@
 .clients-block
+  &s
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
   display: flex
   align-items: center 
   justify-content: center
@@ -8,11 +12,11 @@
   border: 1px solid rgba(0, 0, 0, 0.1)
   margin-bottom: 33px
   cursor: pointer
+  flex-basis: 24%
   &:hover
     border: 1px solid rgba(0, 0, 0, 0.5)
   .img-wrap
-    img
-      max-width: 100%
+    max-height: 130px
 .img-wrap-1
   height: 98px
   width: 147px
