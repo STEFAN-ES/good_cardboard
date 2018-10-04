@@ -349,6 +349,8 @@ section.contacts {
     text-align: center; }
     .products-block__img {
       margin-bottom: 19px; }
+      .products-block__img-last {
+        background: url("../img/products/box-4-1.png") top no-repeat; }
     .products-block__title {
       color: #313131;
       font-size: 20px;
