@@ -73,6 +73,8 @@ input:focus, button:focus {
       text-transform: uppercase;
       font-weight: 700; }
   .form__input {
+    font-family: Roboto;
+    font-size: 14px;
     margin-right: 10px;
     -ms-flex-preferred-size: 65%;
         flex-basis: 65%;
@@ -85,6 +87,60 @@ input:focus, button:focus {
     margin-bottom: 25px;
     font-size: 14px;
     font-weight: 300; }
+
+/* оформляю анимацию главной картинки */
+@-webkit-keyframes main-img {
+  0% {
+    opacity: 0;
+    margin-bottom: -400px;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg); }
+  70% {
+    -webkit-transform: rotateY(-30%);
+            transform: rotateY(-30%); }
+  80% {
+    margin-bottom: 0; }
+  90% {
+    -webkit-transform: rotateY(20deg);
+            transform: rotateY(20deg); }
+  95% {
+    -webkit-transform: rotateY(-20deg);
+            transform: rotateY(-20deg); }
+  100% {
+    opacity: 1;
+    margin-bottom: 0;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); } }
+@keyframes main-img {
+  0% {
+    opacity: 0;
+    margin-bottom: -400px;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg); }
+  70% {
+    -webkit-transform: rotateY(-30%);
+            transform: rotateY(-30%); }
+  80% {
+    margin-bottom: 0; }
+  90% {
+    -webkit-transform: rotateY(20deg);
+            transform: rotateY(20deg); }
+  95% {
+    -webkit-transform: rotateY(-20deg);
+            transform: rotateY(-20deg); }
+  100% {
+    opacity: 1;
+    margin-bottom: 0;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); } }
+
+.animate {
+  -webkit-animation-name: main-img;
+          animation-name: main-img;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
 
 .header_logo {
   background: url("../img/good_cardboard.png") center no-repeat;
@@ -216,6 +272,7 @@ section.contacts {
     vertical-align: middle;
     margin: 0 10px 0 0; }
   .button_big {
+    font-size: 14px;
     padding-top: 20px;
     padding-bottom: 20px;
     vertical-align: middle; }
@@ -458,6 +515,23 @@ section.contacts {
   width: 100%;
   background: url("../img/clients/img-12.png") center no-repeat; }
 
+.production {
+  padding-top: 87px;
+  padding-bottom: 95px; }
+  .production-text__title {
+    padding: 17px 28px;
+    margin-bottom: 28px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 22px;
+    background-color: #ff9d00; }
+  .production-text__descr {
+    color: #373737;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px; }
+
 @media (max-width: 1200px) {
   .main-img {
     width: 390px;
@@ -583,10 +657,12 @@ section.contacts {
       font-size: 18px;
       font-weight: 300; }
   .features-block {
-    -webkit-box-orient: vertical;
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     text-align: center; }
   .clients-block {
     max-width: 220px;
@@ -717,12 +793,17 @@ section.contacts {
       font-size: 18px;
       font-weight: 300; }
   /* Бллок с преимуществами */
-  .features-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center; }
+  .features {
+    padding-bottom: 45px; }
+    .features-block {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      text-align: center;
+      margin-bottom: 15px; }
   .clients-block {
     max-width: 165px;
     max-height: 90px;
@@ -912,6 +993,8 @@ section.contacts {
   .products-block__title {
     font-size: 18px;
     margin-bottom: 15px; }
+    .products-block__title-mobile {
+      margin-top: 35px; }
   /* Оформляю блок с клиентами */
   .clients .section-title {
     font-size: 22px;

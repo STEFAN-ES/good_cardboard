@@ -63,6 +63,8 @@
       text-transform: uppercase
       font-weight: 700
   &__input
+    font-family: Roboto
+    font-size: 14px
     margin-right: 10px
     flex-basis: 65%
     border-radius: 4px
@@ -76,4 +78,27 @@
     font-weight: 300
 
 
+/* оформляю анимацию главной картинки */
+
+@keyframes main-img
+  0%
+    opacity: 0
+    margin-bottom: -400px
+    transform: rotateY(-90deg)
+  70%
+    transform: rotateY(-30%)
+  80%
+    margin-bottom: 0
+  90%
+    transform: rotateY(20deg)
+  95%
+    transform: rotateY(-20deg)
+  100%
+    opacity: 1
+    margin-bottom: 0
+    transform: rotateY(0deg)
   
+.animate
+  animation-name: main-img
+  animation-duration: 1.5s 
+  animation-delay: 0.4s
