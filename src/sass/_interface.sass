@@ -46,3 +46,51 @@
     padding-top: 20px
     padding-bottom: 20px
     vertical-align: middle
+.slick-slide
+  outline: none
+
+.slider-arrow
+  position: absolute
+  top: 0
+  height: 100%
+  width: 22px
+  border: 1px solid $active-color
+  z-index: 9
+  cursor: pointer
+  &_left
+    left: 0
+    background: url(../img/arrow-left.png) center no-repeat
+    &:hover
+      background:  $active-color url(../img/arrow-left_active.png) center no-repeat
+  &_right
+    right: 0
+    background: url(../img/arrow-right.png) center no-repeat
+    &:hover
+      background: $active-color url(../img/arrow-right_active.png) center no-repeat
+  &-mobile
+    position: absolute
+    top: 35%
+    height: 30%
+    width: 22px
+    border: 1px solid $active-color
+    z-index: 9
+    cursor: pointer
+    &_left
+      left: 0
+      background:  $active-color url(../img/arrow-left_active.png) center no-repeat
+    &_right
+      right: 0
+      background: $active-color url(../img/arrow-right_active.png) center no-repeat
+.slider-feedback-arrow
+  position: absolute
+  top: 0
+  height: 100%
+  width: 20px
+  z-index: 9
+  cursor: pointer
+  &_left
+    left: 0
+    background: url('../img/feedback-arrow_left.png') center no-repeat
+  &_right
+    right: 0
+    background: url('../img/feedback-arrow_right.png') center no-repeat

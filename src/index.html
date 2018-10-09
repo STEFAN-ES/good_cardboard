@@ -366,10 +366,31 @@
   </section>
   <!-- /.products -->
 
+  <section class="offer">
+    <div class="container">
+      <h2 class="offer-title">
+        Получите индивидуальное предложение
+        <span>на производство и поставку изделий</span>
+      </h2>
+      <!-- /.offer-title -->
+      <div class="offer-form">
+        <form action="#">
+          <label for="">Введите ваш номер телефона:</label>
+          <input type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+          <button type="submit">Оставить заявку!</button>
+        </form>
+        <small class="form-small">*Минимальный заказ 500шт</small>
+      </div>
+      <!-- /.offer-form -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.offer -->
+
   <section class="production">
     <div class="container">
       <div class="row">
-        <div class="col-7">
+        <div class="col-12 col-md-7 slider-prod">
           <div class="production-slider_top">
             <img src="img/production/img-1.jpg" alt="">
             <img src="img/production/img-2.jpg" alt="">
@@ -390,13 +411,14 @@
             <!-- /.production-slider -->
         </div>
         <!-- /.col-7 -->
-        <div class="col-5">
+        <div class="col-12 col-md-5 title-slider">
           <div class="production-text">
             <div class="production-text__title">Производство</div>
             <!-- /.production-text__title -->
-            <div class="production-text__descr">Современное оборудование позволяет произ- водить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.
-              Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения, транспортировки и производства вашей продукции.
-              Возможно нанесение цветной флексопечати на поверхность коробов.</div>
+            <div class="production-text__descr">
+              <p>Современное оборудование позволяет произ- водить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</p>
+              <p>Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения, транспортировки и производства вашей продукции.</p>
+              <p>Возможно нанесение цветной флексопечати на поверхность коробов.</p></div>
             <!-- /.production-text__descr -->
           </div>
           <!-- /.production-text -->
@@ -413,7 +435,7 @@
 
   <section class="clients">
     <div class="container">
-      <h2 class="section-title">Наши клиенты</h2>
+      <h2 class="section-title wow fadeInUp">Наши клиенты</h2>
       
       <div class="clients-blocks">
         
@@ -487,6 +509,26 @@
   </section>
   <!-- /.clients -->
 
+  <section class="feedback">
+    <div class="container">
+      <div class="section-title wow fadeInUp">Отзывы о сотрудничестве</div>
+      <div class="feedback-slider">
+        
+        <div class="feedback-slider__item"><img src="img/feedback/img-1.png" alt=""></div>
+        <!-- /.feedback-slider__item -->
+        <div class="feedback-slider__item"><img src="img/feedback/img-2.png" alt=""></div>
+        <!-- /.feedback-slider__item -->
+        <div class="feedback-slider__item"><img src="img/feedback/img-3.png" alt=""></div>
+        <!-- /.feedback-slider__item -->
+        <div class="feedback-slider__item"><img src="img/feedback/img-1.png" alt=""></div>
+        <!-- /.feedback-slider__item -->
+        <div class="feedback-slider__item"><img src="img/feedback/img-2.png" alt=""></div>
+        <!-- /.feedback-slider__item -->
+      
+      </div>
+    </div>
+  </section>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script> window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
 
@@ -511,6 +553,17 @@
        slidesToShow: 1,
        slidesToScroll: 1,
        asNavFor: '.production-slider_bottom',
+       responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<div class="slider-arrow-mobile slider-arrow-mobile_left"></div>',
+        nextArrow: '<div class="slider-arrow-mobile slider-arrow-mobile_right"></div>',
+      },
+    }]
      });
      $('.production-slider_bottom').slick({
        arrows: true,
@@ -519,6 +572,31 @@
        asNavFor: '.production-slider_top',
        prevArrow: '<div class="slider-arrow slider-arrow_left"></div>',
        nextArrow: '<div class="slider-arrow slider-arrow_right"></div>',
+       
+     });
+     $('.feedback-slider').slick({
+       slidesToShow: 3,
+       slidesToScroll: 1,
+       prevArrow: '<div class="slider-feedback-arrow slider-feedback-arrow_left"></div>',
+       nextArrow: '<div class="slider-feedback-arrow slider-feedback-arrow_right"></div>',
+       responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    
+    {
+      breakpoint: 1015,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },]
      });
    </script>
   

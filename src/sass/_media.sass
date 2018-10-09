@@ -163,6 +163,16 @@
     background: url('../img/clients/img-11-1.png') center no-repeat
   .img-wrap-12
     background: url('../img/clients/img-12-1.png') center no-repeat
+  
+  .production
+    &-text
+      &__descr
+        font-size: 14px
+        line-height: 23px
+    &-slider
+      &_bottom
+        max-height: 58.5px
+        overflow: hidden
 
                                               /* ~media 992px */
   
@@ -304,6 +314,57 @@
   .img-wrap-12
     background: url('../img/clients/mobile/img-12.png') center no-repeat
 
+  .production
+    .col-md-5
+      padding-left: 0
+      padding-right: 0
+    .row
+      flex-direction: column-reverse
+    padding-top: 28px
+    &-text
+      text-align: center
+      &__title
+        text-transform: uppercase
+        line-height: 18px
+        font-size: 20px
+        margin-bottom: 17px
+      &__descr
+        font-size: 14px
+        font-weight: 300
+        line-height: 18px
+        margin-bottom: 22px
+        padding-left: 15px
+        padding-right: 15px    
+    &-slider
+      &_top
+        height: 380px
+        overflow: hidden
+        img
+          object-fit: cover
+          height: 380px
+      &_bottom
+        display: none !important
+    
+  
+  .feedback
+    &-slider
+      padding-left: 0
+      padding-right: 0
+  
+  .slider-feedback-arrow
+    position: absolute
+    top: 35%
+    height: 30%
+    width: 22px
+    border: 1px solid $active-color
+    z-index: 9
+    cursor: pointer
+    &_left
+      left: 0
+      background:  $active-color url(../img/arrow-left_active.png) center no-repeat
+    &_right
+      right: 0
+      background: $active-color url(../img/arrow-right_active.png) center no-repeat
                                /* ~max-width: 768px~ */
 
     
@@ -533,6 +594,27 @@
     height: 21px
     width: 117px
     background: url('../img/clients/mobile/img-12.png') center no-repeat
+  
+  .production
+    padding-top: 28px
+    &-text
+      text-align: center
+      &__title
+        line-height: 18px
+        font-size: 20px
+        margin-bottom: 17px
+      &__descr
+        font-size: 14px
+        font-weight: 300
+        line-height: 18px
+        margin-bottom: 22px
+    &-slider                //Адаптирую слайдер производства
+      &_bottom
+        display: none
+    .row
+      flex-direction: column-reverse
+
+
 
 
 
@@ -614,3 +696,27 @@
       margin-bottom: 30px
       &__img
         margin-right: 10px
+
+/* Слайдер с отзывами */
+  
+/* Делаю адаптив блока со слайдером */
+@media (min-width: 769px)
+  .production
+    .col-md-5
+      padding-left: 0
+    .col-md-7
+      padding-right: 0
+    &-text
+      padding-top: 20px
+      &__descr
+        padding-left: 25px
+    
+
+/* Закрепляю меню на десктопе  */
+@media (min-width: 993px)
+  .nav
+    position: fixed
+    width: 100%
+    z-index: 10
+  section.contacts
+    padding-top: 57px
