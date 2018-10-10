@@ -65,3 +65,75 @@ nav
 
 section.contacts
   padding: 14px 0
+.menu
+  &-logo-wrap
+    display: flex
+    justify-content: center
+  &-link
+    display: flex
+    align-items: center
+    margin-right: 15px
+    z-index: 12
+    &-line
+      position: relative
+      display: block
+      height: 3px
+      width: 20px
+      background-color: $text-color-dark
+      transition: all 0.2s
+      &:before
+        position: absolute
+        content: ''
+        display: block
+        height: 3px
+        width: 20px
+        background-color: $text-color-dark
+        bottom: 7px
+        transition: all 0.2s
+      &:after
+        position: absolute
+        content: ''
+        display: block
+        height: 3px
+        width: 20px
+        background-color: $text-color-dark   
+        top: 7px    
+        transition: all 0.2s
+    &_active
+      background-color: transparent
+      &:before
+        bottom: 0
+        transform: rotate(135deg)
+      &:after
+        top: 0
+        transform: rotate(-135deg)
+  &-mobile
+    text-align: center
+    position: fixed
+    height: 100vh
+    width: 100vw
+    background-color: #F8C471
+    opacity: 0.95
+    left: -100vw
+    transition: all 0.5s
+    z-index: 11
+    ul
+      text-align: center
+      list-style: none
+      margin-top: 55px
+      padding: 0
+      li
+        border-bottom: 1px solid rgba(55, 55, 55, .3)
+        display: block
+        padding: 11px 0
+        &:last-child
+          border-bottom: none
+        a
+          position: relative
+          color: $text-color-dark
+          text-transform: uppercase
+          text-decoration: none
+          font-size: 26px
+          font-weight: 500
+    &_active
+      left: 0

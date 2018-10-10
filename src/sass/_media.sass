@@ -72,7 +72,7 @@
 @media (max-width: 992px)
   .hidden-box
     display: none
-  nav
+  .nav
     display: none
   .main
     text-align: center
@@ -179,9 +179,16 @@
 @media (max-width: 768px)
   .hidden-mobile
     display: none
-  nav
+  .nav
     display: none
+  section.contacts
+    position: fixed
+    width: 100%
+    background-color: #fff
+    z-index: 12
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
   .main
+    padding-top: 144px
     text-align: center
     &-text
       padding-right: 0
@@ -344,6 +351,21 @@
           height: 380px
       &_bottom
         display: none !important
+
+  .offer
+    &-title
+      font-size: 20px
+      font-weight: 700
+    &-subtitle
+      margin-top: 10px
+      font-size: 16px
+      font-weight: 400
+    &-form
+      &__label
+        font-size: 14px
+        margin-bottom: 17px
+      &__input
+        margin-bottom: 13px
     
   
   .feedback
@@ -365,6 +387,11 @@
     &_right
       right: 0
       background: $active-color url(../img/arrow-right_active.png) center no-repeat
+
+  .menu
+    &-mobile
+      ul
+        margin-top: 85px
                                /* ~max-width: 768px~ */
 
     
@@ -374,8 +401,12 @@
       &::after
         display: none
   section.contacts
+    position: fixed
+    width: 100%
+    z-index: 12
+    background-color: #fff
     padding: 11px 0
-  nav
+  .nav
     display: none
   .header
     &_logo
@@ -411,7 +442,7 @@
       padding-bottom: 3px
   
   .main
-    padding-top: 45px
+    padding-top: 102px
     text-align: center
     &-text
       &__title
@@ -614,6 +645,11 @@
     .row
       flex-direction: column-reverse
 
+  .menu //Адаптирую меню
+    &-mobile
+      ul
+        margin-top: 55px
+
 
 
 
@@ -710,7 +746,14 @@
       padding-top: 20px
       &__descr
         padding-left: 25px
-    
+        text-align: justify
+        max-width: 379px
+        width: 100%
+  section.contacts
+    .menu-link
+      display: none
+  .hidden-desktop
+    display: none    
 
 /* Закрепляю меню на десктопе  */
 @media (min-width: 993px)
